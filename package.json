@@ -1,0 +1,23 @@
+{
+  "name": "architechture-design",
+  "version": "1.0.0",
+  "description": "- To practice and implement system designs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nahzilian/architechture-design.git"
+  },
+  "author": "Doug Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nahzilian/architechture-design/issues"
+  },
+  "homepage": "https://github.com/Nahzilian/architechture-design#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
