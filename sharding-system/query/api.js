@@ -13,20 +13,31 @@ var dbconn = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-const executeQuery = (sql) => {
-    dbconn.query(sql, function (err, result) {
+dbconn.connect(function(err) {
+    if ( !err ) {
+        console.log("Connected to MySQL");
+    } else if ( err ) {
+        console.log(err);
+    }
+});
+
+const executeQuery = (req, res) => {
+    dbconn.query(res.sqlQuery, function (err, result) {
         if (err) throw err;
-        return result;
+        console.log(result)
+        res.json(result)
     });
 }
 
-app.get('/api/customer', (req, res) => {
-    var sqlCommand = `SELECT * FROM CUSTOMER`;
+app.get('/api/customers', (req, res) => {
     try{
-        var result = executeQuery(sqlCommand);
-        return res.json(result);
+        res.sqlQuery = `SELECT * FROM CUSTOMERS`;
+        executeQuery(req, res);
     }catch(err){
         console.log(err);
         return res.status(403).send('Error');
     }
 })
+
+
+module.exports = app
