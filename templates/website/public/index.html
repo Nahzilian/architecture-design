@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Sample test</title>
+  </head>
+  <body>
+    <main class="w-full">
+      <div class="w-full shadow-md">
+        <nav class="bg-gray-800 px-4 py-2 fixed top-0 w-full z-10">
+          <div class="flex items-center justify-between">
+            <a class="text-white font-bold text-xl" href="#">Logo</a>
+            <button class="text-white focus:outline-none md:hidden">
+              <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                <path fill-rule="evenodd"
+                  d="M3 18v-2h18v2H3zm0-5h18v2H3v-2zm0-7h18v2H3V6z" />
+              </svg>
+            </button>
+            <div class="hidden md:block">
+              <a class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="#">Link 1</a>
+              <a class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="#">Link 2</a>
+              <a class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="#">Link 3</a>
+              <a class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" href="#">Link 4</a>
+            </div>
+          </div>
+        </nav>
+      <section>
+        <div
+          class="bg-cover bg-center h-screen flex items-center"
+          style="
+            background-image: url('/public/assets/images/fishy.png');
+          "
+        >
+          <div class="container mx-auto">
+            <h1 class="text-white text-5xl font-bold">
+              Welcome to my website
+            </h1>
+            <p class="text-white text-xl py-4">Learn about me and my work.</p>
+            <a
+              href="#"
+              class="bg-white text-gray-800 font-bold py-2 px-4 rounded-full mt-10 hover:bg-gray-200 hover:text-gray-900"
+              >Get started</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center">
+          <div class="w-full lg:w-1/2 mb-6 lg:mb-0 lg:pr-16">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Welcome to Our Website</h2>
+            <p class="mt-3 text-xl text-gray-500 sm:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+            <div class="mt-6">
+              <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg">Get Started</a>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <img src="https://via.placeholder.com/600x400" alt="Welcome Image" class="w-full h-auto rounded-lg shadow-lg">
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-jet py-12 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Today's Deal</h2>
+            <p class="mt-3 text-xl text-gray-500 sm:mt-4">Get our best deals of the day, every day.</p>
+          </div>
+          <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white rounded-lg shadow-lg text-jet">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-gray-900">Product 1</h3>
+                <p class="mt-4 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+                <div class="mt-6 flex items-center justify-between">
+                  <span class="font-bold text-gray-900">$49.99</span>
+                  <a href="#" class="text-gray-900 hover:text-blue-500">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg text-jet">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-gray-900">Product 2</h3>
+                <p class="mt-4 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+                <div class="mt-6 flex items-center justify-between">
+                  <span class="font-bold text-gray-900">$29.99</span>
+                  <a href="#" class="text-gray-900 hover:text-blue-500">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg text-jet">
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-gray-900">Product 3</h3>
+                <p class="mt-4 text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+                <div class="mt-6 flex items-center justify-between">
+                  <span class="font-bold text-gray-900">$19.99</span>
+                  <a href="#" class="text-gray-900 hover:text-blue-500">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Services</h2>
+          <div class="mt-6 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <div class="flex flex-col items-center">
+              <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://via.placeholder.com/150" alt="Service Icon">
+              </div>
+              <div class="mt-4 text-center">
+                <h3 class="text-lg font-medium text-gray-900">Service Title</h3>
+                <p class="mt-2 text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://via.placeholder.com/150" alt="Service Icon">
+              </div>
+              <div class="mt-4 text-center">
+                <h3 class="text-lg font-medium text-gray-900">Service Title</h3>
+                <p class="mt-2 text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://via.placeholder.com/150" alt="Service Icon">
+              </div>
+              <div class="mt-4 text-center">
+                <h3 class="text-lg font-medium text-gray-900">Service Title</h3>
+                <p class="mt-2 text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://via.placeholder.com/150" alt="Service Icon">
+              </div>
+              <div class="mt-4 text-center">
+                <h3 class="text-lg font-medium text-gray-900">Service Title</h3>
+                <p class="mt-2 text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://via.placeholder.com/150" alt="Service Icon">
+              </div>
+              <div class="mt-4 text-center">
+                <h3 class="text-lg font-medium text-gray-900">Service Title</h3>
+                <p class="mt-2 text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+                </div>
+                </div>
+                <div class="flex flex-col items-center">
+                <div class="flex-shrink-0">
+                <img class="h-12 w-12" src="https://via.placeholder.com/150" alt="Service Icon">
+                </div>
+                <div class="mt-4 text-center">
+                <h3 class="text-lg font-medium text-gray-900">Service Title</h3>
+                <p class="mt-2 text-base text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod ligula quis sapien faucibus, sed pulvinar sapien sodales.</p>
+                </div>
+                </div>
+                </div>
+                
+                  </div>
+        </section>
+
+      <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-lg font-medium mb-4">Social Media</h3>
+            <ul class="flex space-x-4">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-200">
+                  <span class="sr-only">Facebook</span>
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-200">
+                  <span class="sr-only">Twitter</span>
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-gray-200">
+                  <span class="sr-only">Instagram</span>
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-lg font-medium mb-4">Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li>123 Main St</li>
+              <li>Anytown, USA 12345</li>
+              <li><a href="mailto:info@example.com">info@example.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-sm mb-2 md:mb-0">&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://kit.fontawesome.com/ab82d81c79.js" crossorigin="anonymous"></script>
+  </body>
+</html>
